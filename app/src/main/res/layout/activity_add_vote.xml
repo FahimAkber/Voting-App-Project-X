@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".AddVoteActivity">
+
+    <TextView
+        android:text="Add a new VOTE"
+        android:textSize="26sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#CCDC9036"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/et_vote_name"
+        android:hint="Vote Name"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/et_vote1"
+        android:hint="Candidate 1"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+            android:id="@+id/et_vote2"
+            android:hint="Candidate 2"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <EditText
+            android:id="@+id/et_vote3"
+            android:hint="Candidate 3(If exist)"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <EditText
+            android:id="@+id/et_vote4"
+            android:hint="Candidate 4(If exist)"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <EditText
+            android:id="@+id/et_vote5"
+            android:hint="Candidate 5(If exist)"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="Select Start and End time in 24 hour format"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#F35454"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv1_vote_start"
+            android:text="Start"
+            android:padding="5dp"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:background="#CAA76A"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/tv1_vote_end"
+            android:text="End"
+            android:textSize="22sp"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:background="#61B564"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_vote_date"
+        android:text="Tap for VOTE date"
+        android:textSize="24sp"
+        android:background="#98A3DF"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_vote_add"
+        android:text="Add This VOTE"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

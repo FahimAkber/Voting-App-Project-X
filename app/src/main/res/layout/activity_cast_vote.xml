@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CastVoteActivity">
+
+    <LinearLayout
+        android:visibility="visible"
+        android:orientation="vertical"
+        android:id="@+id/layout_cast"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:background="#E8E7E7"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_cast_name"
+                android:text="Vote Name"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#7BAABC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_cast_start"
+                    android:text="9.00"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text="To"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#FF9800"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tv_cast_end"
+                    android:gravity="center"
+                    android:text="9.00"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_cast_occur"
+                android:text="May 21, 2021"
+                android:textSize="20sp"
+                android:fontFamily="casual"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_cast_second"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="Candidates"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ListView
+                android:id="@+id/lv_cast"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_cast_message"
+            android:text="Time Up to cast your VOTE!!"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FB6D6D"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_cast"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

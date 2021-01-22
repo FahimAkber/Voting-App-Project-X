@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <ProgressBar
+        android:id="@+id/pb_sign"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/layout_main"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_sign_message"
+            android:textSize="20sp"
+            android:textColor="#E32323"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/et_sign_name"
+            android:hint="Your name"
+            android:textSize="22sp"
+            android:inputType="text"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/et_sign_national_id"
+            android:hint="Your National ID"
+            android:textSize="22sp"
+            android:inputType="number"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/et_sign_password"
+            android:hint="Your Password"
+            android:textSize="22sp"
+            android:inputType="textPassword"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/et_sign_con_password"
+            android:hint="Again your Password"
+            android:textSize="22sp"
+            android:inputType="textPassword"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_sign_up"
+            android:text="Identify and Enter"
+            android:textAllCaps="false"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Already Here?"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_log_in"
+                android:text="Get Enter"
+                android:paddingLeft="10dp"
+                android:textSize="20sp"
+                android:textColor="#FF5722"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

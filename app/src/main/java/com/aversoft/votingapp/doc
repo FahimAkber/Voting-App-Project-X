@@ -1,0 +1,21 @@
+Project: A Voting App
+Developed By: Fahim Mahmud Akber
+For: Project X Ltd.
+
+//Concept:
+
+I have followed the instructions that you sent me by mail. Here, User can register once and can log in. In both
+case user have to use fingerprint. Without fingerprint no one can get access. Admin can add new VOTE, and see
+the vote result, who has casted vote.
+
+To get access as Admin, i have used a fixed data
+
+    id: 1234567890
+    pass: admin@1234
+
+No one can get access as admin without this credential.
+
+An user can cast his vote only once. In the home page s/he can see today's vote(if any vote available today)
+and upcoming vote. S/he has to only click on the today's vote to cast his vote.
+
+I HAVE USED FIREBASE DATABASE TO STORE DATA
