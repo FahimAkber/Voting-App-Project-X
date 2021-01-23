@@ -41,17 +41,21 @@ public class SignUpActivity extends AppCompatActivity {
 
         BiometricManager manager = BiometricManager.from(getApplicationContext());
         switch(manager.canAuthenticate()){
+
             case BiometricManager.BIOMETRIC_SUCCESS:
                 Toast.makeText(this, "Sensor access Okay!", Toast.LENGTH_SHORT).show();
                 break;
+
             case BiometricManager.BIOMETRIC_ERROR_NO_HARDWARE:
                 tvMessage.setText("No Hardware");
                 btnSignUp.setVisibility(View.GONE);
                 break;
+
             case BiometricManager.BIOMETRIC_ERROR_HW_UNAVAILABLE:
                 tvMessage.setText("Unavailable Hardware");
                 btnSignUp.setVisibility(View.GONE);
                 break;
+
             case BiometricManager.BIOMETRIC_ERROR_NONE_ENROLLED:
                 tvMessage.setText("Nothing happened");
                 btnSignUp.setVisibility(View.GONE);
